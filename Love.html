@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down</title>
+    <style>
+    .img{
+        background-color:rgb(251, 152, 198);
+        text-align: center;
+        color:purple;
+        }
+        .drop{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body> 
+    <h1 style="text-align:center; background-color:plum;">Love compatibility</h1>
+    <h2 style="text-align:center;color:rgb(13, 83, 233);">Find out your top 3 matches</h2> 
+    <div class="drop">
+        Choose your Sign:
+    <select id="ddlselect" onchange="action()";>
+        <option>--Select--</option>
+        <option value="Leo<br>Saggitarius<br>Libra">Aries</option>
+        <option value="Libra<br>Virgo<br>Capricorn">Taurus</option>
+        <option value="Gemini<br>Libra<br>Aquarius">Gemini</option>
+        <option value="Cancer<br>Scorpio<br>Pisces">Cancer</option>
+        <option value="Leo<br>Saggitarius<br>Libra">Leo</option>
+        <option value="Cancer<br>Scorpio<br>Pisces">Virgo</option>
+        <option value="Gemini<br>Libra<br>Aquarius">Libra</option>
+        <option value="Leo<br>Saggitarius<br>Libra">Scorpio</option>
+        <option value="Cancer<br>Scorpio<br>Pisces">Saggitarius</option>
+        <option value="Cancer<br>Scorpio<br>Pisces">Capricorn</option>
+        <option value="Leo<br>Saggitarius<br>Libra">Aquarius</option>
+        <option value="Gemini<br>Libra<br>Aquarius">Pisces</option>
+    </select>
+    <p id="demo"></p>
+</div>
+<script>
+    function action()
+    {
+        var e=document.getElementById("ddlselect");
+        var result=e.options[e.selectedIndex].value;
+        document.getElementById("demo").innerHTML = result;
+    }
+</script>    
+<div class="img">
+    <h1>Is He/She Compatible with you?</h1>
+<img src="images/comp.jpg"  width="600 "  height="650"/>
+</div>
+</body>
+</html>
