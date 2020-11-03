@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script>
-            function validate()
+<head>
+    <script>
+        function validate()
         {
-username= document.myform.uname.value;
-date= document.myform.date.value;
-if(username==""||username.length<3)
-{alert("enter valid name"); document.myform.uname.focus();}
-else if(date=="")
-{alert("enter date"); document.myform.date.focus();}
-else if(document.myform.gender[0].checked==""&&
-document.myform.gender[1].checked==""){alert("enter gender");
-document.myform.gender[0].focus();}
-else{document.myform.submit();}
+            username= document.myform.uname.value;
+            email = document.myform.email.value;
+            if(username==""||username.length<3)
+            {
+                alert("enter valid name"); document.myform.uname.focus();
+            }
+            else if(! /[a-z A-Z 0-9]+@[a-z A-Z]+\.[a-z A-Z]+/.test(email))
+            {
+                alert("Enter valid Email");
+            }
+            else if(document.myform.gender[0].checked=="" && document.myform.gender[1].checked=="")
+            {
+                alert("enter gender");
+                document.myform.gender[0].focus();
+            }
+            else
+            {
+                alert("Thank you for your feedback");
+            }
         }
-        </script>
-        <style>
-        * {
-          box-sizing: border-box;
+    </script>
+
+    <style>
+        *{
+            box-sizing: border-box;
         }
 
         .column {
-          float: left;
-          width: 33.33%;
-          padding: 5px;
+            float: left;
+            width: 33.33%;
+            padding: 5px;
         }
 
         /* Clearfix (clear floats) */
         .row::after {
-          content: "";
-          clear: both;
-          display: table;
+            content: "";
+            clear: both;
+            display: table;
         }
+
         .button {
-         background-color:cornflowerblue;
-         border: none;
-         color:white;
-         border-radius: 12px;
-         padding: 15px 32px;
-         text-align: center;
-         display: inline-block;
-         font-size: 16px;
-         transition-duration: 0.4s;
+            background-color:cornflowerblue;
+            border: none;
+            color:white;
+            border-radius: 12px;
+            padding: 15px 32px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            transition-duration: 0.4s;
         }
+
         .button:hover {
-  background-color: #4CAF50; /* Green */
-  color:white;
+            background-color: #4CAF50; /* Green */
+            color:white;
+        }
 
-}
-.text-center {
-  text-align: center;
-}
-.Tip{
-    background-color: black;
-    color:white;
-    font-size: large;
-    font-style:oblique;
-}
-.center {
-  margin-left: auto;
-  margin-right: auto;
-}
+        .text-center {
+            text-align: center;
+        }
 
-        </style>
-        </head>
+        .Tip {
+            background-color: black;
+            color:white;
+            font-size: large;
+            font-style:oblique;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
+
 <body>
     
     <a name="top"></a>
     <h1 style="text-align:center; color:purple;">MyHoroscope.com</h1>
-    
     <p style="text-align:center; font-size: larger; background-color:lightpink;">Choose Your Zodiac Sign</p>
-
 
 <div class="row">
     <div class="column">
@@ -157,7 +170,7 @@ else{document.myform.submit();}
       </div>
       <div class="column">
          <p><pre>
-                                    <h1>How to Make the Most of Every Moon Phase</h2>
+          <h1>How to Make the Most of Every Moon Phase</h2>
 
         Astrology is so delicious. The more you learn about it, the more riveting it becomes.
         So let’s talk about one of the most integral and magical planets of the solar system: the moon.
@@ -191,9 +204,9 @@ else{document.myform.submit();}
         </tr>
         <tr>
             <td>
-                Date of Birth
+                E-Mail
             </td>
-            <td> <input type="date"  name="date" id="date"></td>
+            <td> <input type="email"  name="email" id="email"></td>
         </tr>
         <tr>
             <td>Gender</td>
