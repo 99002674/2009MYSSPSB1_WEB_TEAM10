@@ -1,0 +1,285 @@
+body
+{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#f4f4f4;
+}
+
+/* Global */
+
+.container
+{
+    width:90%;
+    margin:auto;
+    overflow:hidden;
+}
+ul
+{
+    margin:0;
+    padding:0;
+}
+.news_button
+{
+    height:38px;
+    background:#e8491d;
+    border:0;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right:20px;
+    color:#ffffff;    
+}
+
+/* Header*/
+
+header
+{
+    background-color: bisque;
+    color: red;
+    padding-top:30px;
+    min-height:70px;
+    border-bottom:#e8491d 3px solid;
+}
+header a
+{
+    text-decoration: none;
+    color: tomato;
+}
+header li
+{
+    display: inline;
+    float: left;
+    padding: 0 10px 0 10px;
+}
+header #brand
+{
+    float: left;
+}
+header #brand h1
+{
+    margin: 0;
+}
+header nav
+{
+    float: right;
+    margin-top: 10px;
+}
+header .highlight, header .currentpage a
+{
+    color: black;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header a:hover
+{
+    color: crimson;
+    font-weight: bold;
+}
+
+/* Showcase */
+
+#showcase
+{
+    min-height: 400px;
+    background: url(../images/showcase_wall_04.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: black 0 0 10px;
+}
+#showcase h1
+{
+    margin-top: 100px;
+    font-size: 55px;
+}
+#showcase p
+{
+    font-size: 20px;
+}
+
+/* Newsletter */
+
+#newsletter
+{
+    padding: 30px;
+    color: chocolate;
+    background-color: bisque;
+}
+#newsletter h1
+{
+    float: left;
+}
+#newsletter form
+{
+    float: right;
+    margin-top: 15px;
+}
+#newsletter input[type="email"]
+{
+    padding: 4px;
+    width: 250px;
+    height: 30px;
+    border: none;
+    border-radius: 15px;
+    padding-left: 15px;
+    margin-right: 10px;
+    background-color: cornsilk;
+}
+#services
+{
+    padding: 30px;
+}
+#services h1
+{
+    text-align: center;
+    font-size: 30px;
+}
+#services p
+{
+    text-align: center;
+}
+
+/* homeboxes */
+
+#homeboxes
+{
+    margin-top: 20px;
+}
+#homeboxes .box
+{
+    float: left;
+    text-align: center;
+    width: 31%;
+    padding: 10px;
+}
+#homeboxes .box img
+{
+    width: 300px;
+}
+
+/* galleryboxes */
+
+#galleryboxes
+{
+    margin-top: 20px;
+}
+#galleryboxes h1
+{
+    font-size: 30px;
+    text-align: center;
+}
+#galleryboxes .box
+{
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding-bottom: 50px;
+}
+#galleryboxes .box img
+{
+    width: 250px;
+}
+
+/* Contactboxes*/
+
+#contactus, #contactus p
+{
+    text-align: center;
+}
+#contactboxes
+{
+    margin-top: 10px;
+}
+#contactboxes h1
+{
+    font-size: 25px;
+    text-align: center;
+}
+#contactboxes .box
+{
+    padding-top: 50px;
+    float: left;
+    text-align: center;
+    width: 33%;
+    padding-bottom: 50px;
+}
+#contactboxes .box img
+{
+    width: 100px;
+}
+
+/* locateus*/
+
+#locateus
+{
+    margin-top: 30px;
+    text-align: center;
+    background-color: cornsilk;
+}
+#locateus h1
+{
+    font-size: 25px;
+}
+
+/* socialicons */
+
+#social
+{
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-left:100px;
+    padding-right: 100px;
+    text-align: center;
+}
+#social .box
+{
+    float: left;
+    width: 33.33%;
+}
+#social .box img
+{
+    width: 40px;
+}
+
+/* Footer */
+
+footer
+{
+    padding: 20px;
+    margin-top: 20px;
+    color: tomato;
+    background-color: bisque;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media(max-width:1024px)
+{
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #homeboxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #showcase p
+    {
+        padding-bottom: 100px;
+    }
+    #galleryboxes .box
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    #contactboxes .box img
+    {
+        width: 50px;
+    }
+}
