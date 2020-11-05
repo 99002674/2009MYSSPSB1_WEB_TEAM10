@@ -6,6 +6,7 @@
     <title>Event</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style_forms.css">
+    <script src="/script/eventform.js"></script>
 </head>
 
 <body>
@@ -32,13 +33,13 @@
             </div>
             <div></div>
             <div id="serviceform">
-                <form action="validate()">
+                <form name="eventForm" onsubmit="validate()">
                     <div class="form_row">
                         <div class="left_col">
                             <label for="name">Event Coordinator</label>
                         </div>
                         <div class="right_col">
-                            <input type="text" placeholder="Enter Your Name">
+                            <input type="text" name="name" placeholder="Enter Your Name">
                         </div>
                     </div>
                     <div class="form_row">
@@ -46,7 +47,7 @@
                             <label for="email">Email</label>
                         </div>
                         <div class="right_col">
-                            <input type="email" placeholder="Enter Your Email">
+                            <input type="email" name="email" placeholder="Enter Your Email">
                         </div>
                     </div>
                     <div class="form_row">
@@ -54,7 +55,7 @@
                             <label for="phone">Phone Number</label>
                         </div>
                         <div class="right_col">
-                            <input type="number" placeholder="Enter Your Phone Number">
+                            <input type="number" name="phone" placeholder="Enter Your Phone Number">
                         </div>
                     </div>
                     <div class="form_row">
@@ -62,7 +63,7 @@
                             <label for="date">Event Date</label>
                         </div>
                         <div class="right_col">
-                            <input type="date">
+                            <input type="date" name="date">
                         </div>
                     </div>
                     <div class="form_row">
@@ -70,7 +71,7 @@
                             <label for="number">Number of Participants</label>
                         </div>
                         <div class="right_col">
-                            <input type="number" placeholder="0">
+                            <input type="number" name="num" placeholder="0">
                         </div>
                     </div>
                     <div class="form_row">
@@ -111,7 +112,7 @@
                             <label for="city">City</label>
                         </div>
                         <div class="right_col">
-                            <input type="text" placeholder="Enter your City">
+                            <input type="text" name="city" placeholder="Enter your City">
                         </div>
                     </div>
                     </div>
@@ -120,7 +121,7 @@
                             <label for="street">Street</label>
                         </div>
                         <div class="right_col">
-                            <input type="text" placeholder="Enter your Street">
+                            <input type="text" name="street" placeholder="Enter your Street">
                         </div>
                     </div>
                     <div class="form_row">
@@ -128,7 +129,7 @@
                             <label for="Address">Auditorium/Convention Centre</label>
                         </div>
                         <div class="right_col">
-                            <input type="text" placeholder="Enter your Address">
+                            <input type="text" name="address" placeholder="Enter your Address">
                         </div>
                     </div>
                     <div class="form_row">

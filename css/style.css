@@ -29,6 +29,10 @@ ul
     padding-right:20px;
     color:#ffffff;    
 }
+.news_button:hover
+{
+    background:#a83616;
+}
 
 /* Header*/
 
