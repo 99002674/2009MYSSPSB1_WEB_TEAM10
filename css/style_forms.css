@@ -96,3 +96,12 @@ input[type=submit]:hover
     display: table;
     clear: both;
 }
+
+@media(max-width: 1024px)
+{
+    .left_col, .right_col, input[type=submit]
+    {
+      width: 100%;
+      margin-top: 0;
+    }
+}
