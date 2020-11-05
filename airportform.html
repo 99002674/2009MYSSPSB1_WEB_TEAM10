@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airport</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div id="brand">
+                <h1>Open <span class="highlight">Grills</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="currentpage"><a href="home.html">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="form">
+        <div class="container">
+            <div>
+                <h2>Order Service</h2>
+            </div>
+            <div></div>
+            <div id="serviceform">
+                <form action="validate()">
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="airlinename">Airline Name</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="text" placeholder="Enter Airline Name">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="email" placeholder="Enter Your Email">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="number" placeholder="Enter Your Phone Number">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="date">Journey Date</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="number">Number of Passengers</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="number" placeholder="0">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="cuisine">Cuisine</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="checkbox" name="food1" id="food1">
+                            <label for="food1">Indian</label>
+                            <input type="checkbox" name="food2" id="food2">
+                            <label for="food2">Chinese</label>
+                            <input type="checkbox" name="food3" id="food3">
+                            <label for="food3">Arabian</label>
+                            <input type="checkbox" name="food4" id="food4">
+                            <label for="food4">Italian</label>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="state">State</label>
+                        </div>
+                        <div class="right_col">
+                            <select name="state" id="state">
+                                <option value="default">-- Select State --</option>
+                                <option value="Kerala">Kerla</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Andhra Pradhesh">Andhra Pradhesh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Odisha">Odisha</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="city">City</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="text" placeholder="Enter your City">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="street">Street</label>
+                        </div>
+                        <div class="right_col">
+                            <input type="text" placeholder="Enter your Street">
+                        </div>
+                    </div>
+                    <div class="form_row">
+                        <div class="left_col">
+                            <label for="orderdetails">Order Details</label>
+                        </div>
+                        <div class="right_col">
+                            <textarea name="orderdetails" id="orderdetails" cols="30" rows="10" placeholder="Order Details"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>CV Web Design &copy; 2020</footer>
+
+</body>
+</html>
