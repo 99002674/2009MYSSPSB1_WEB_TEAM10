@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_forms.css">
 </head>
 
 <body>
@@ -25,9 +26,9 @@
     </header>
 
     <section id="form">
-        <div class="container">
-            <div>
-                <h2>Order Service</h2>
+        <div class="form_container">
+            <div id="party_form_heading">
+                <h2>Party Food Service</h2>
             </div>
             <div></div>
             <div id="serviceform">
@@ -94,7 +95,7 @@
                         <div class="right_col">
                             <select name="state" id="state">
                                 <option value="default">-- Select State --</option>
-                                <option value="Kerala">Kerla</option>
+                                <option value="Kerala">Kerala</option>
                                 <option value="Tamil Nadu">Tamil Nadu</option>
                                 <option value="Karnataka">Karnataka</option>
                                 <option value="Telangana">Telangana</option>
@@ -112,6 +113,8 @@
                         <div class="right_col">
                             <input type="text" placeholder="Enter your Street">
                         </div>
+                    </div>
+                    <div class="form_row">
                         <div class="left_col">
                             <label for="city">City</label>
                         </div>
@@ -134,6 +137,9 @@
                         <div class="right_col">
                             <textarea name="orderdetails" id="orderdetails" cols="30" rows="10" placeholder="Order Details"></textarea>
                         </div>
+                    </div>
+                    <div class="form_row" id="submit_button">
+                        <input type="submit" value="Submit Order">
                     </div>
                 </form>
             </div>

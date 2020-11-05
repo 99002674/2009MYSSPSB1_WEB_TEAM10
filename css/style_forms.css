@@ -1,0 +1,98 @@
+.form_container
+{
+    width:50%;
+    margin:auto;
+    overflow:hidden;
+    background: rgb(250, 234, 201);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+input[type=text], input[type=number], input[type=email], input[type=date], input[type=time], input[type=time], select, textarea
+{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#airline_form_heading
+{
+    background:  url(/images/airport.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#party_form_heading
+{
+    background:  url(/images/party.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#event_form_heading
+{
+    background:  url(/images/event.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+label
+{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+#submit_button
+{
+    text-align: center;
+    margin-top: 20px;
+}
+input[type=submit]
+{
+    background-color: rgb(240, 152, 51);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover
+{
+    background-color: rgb(192, 115, 27);
+}
+
+.left_col
+{
+    float: left;
+    width: 33.33%;
+    margin-top: 6px;
+}
+
+.right_col
+{
+    float: left;
+    width: 66.66%;
+    margin-top: 6px;
+}
+
+.form_row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

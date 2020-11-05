@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Airport</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_forms.css">
 </head>
 
 <body>
@@ -25,11 +26,10 @@
     </header>
 
     <section id="form">
-        <div class="container">
-            <div>
-                <h2>Order Service</h2>
+        <div class="form_container">
+            <div id="airline_form_heading">
+                <h2>Airline Food Order</h2>
             </div>
-            <div></div>
             <div id="serviceform">
                 <form action="validate()">
                     <div class="form_row">
@@ -110,6 +110,8 @@
                         <div class="right_col">
                             <input type="text" placeholder="Enter the Airport">
                         </div>
+                    </div>
+                    <div class="form_row">
                         <div class="left_col">
                             <label for="arrival">Arrival</label>
                         </div>
@@ -124,6 +126,9 @@
                         <div class="right_col">
                             <textarea name="orderdetails" id="orderdetails" cols="30" rows="10" placeholder="Order Details"></textarea>
                         </div>
+                    </div>
+                    <div class="form_row" id="submit_button">
+                        <input type="submit" value="Submit Order">
                     </div>
                 </form>
             </div>
