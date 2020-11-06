@@ -21,7 +21,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], input
 
 #airline_form_heading
 {
-    background:  url(/images/airport.png);
+    background:  url(../images/airport.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -31,7 +31,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], input
 
 #party_form_heading
 {
-    background:  url(/images/party.png);
+    background:  url(../images/party.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
@@ -42,7 +42,7 @@ input[type=text], input[type=number], input[type=email], input[type=date], input
 
 #event_form_heading
 {
-    background:  url(/images/event.jpg);
+    background:  url(../images/event.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 100px;
