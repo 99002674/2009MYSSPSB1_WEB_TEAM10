@@ -13,7 +13,7 @@ function validate()
     var city = document.forms["partyForm"]["city"].value;
     var address = document.forms["partyForm"]["address"].value;
 
-    if(name=="")
+    if(name=="" || name.lenth < 5 || name.lenth > 15 || !isNaN(name))
     {
         alert("Invalid Name");
     }

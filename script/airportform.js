@@ -14,7 +14,7 @@ function validate()
     var departure = document.forms["airportForm"]["departure"].value;
     var arrival = document.forms["airportForm"]["arrival"].value;
 
-    if(name=="")
+    if(name=="" || name.lenth < 5 || name.lenth > 15 || !isNaN(name))
     {
         alert("Invalid Name");
     }
