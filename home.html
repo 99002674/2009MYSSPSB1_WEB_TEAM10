@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Grills: Home</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script>
+        function myFunction() {
+          alert("Congratulations! You'll recieve our Newsletter shortly");
+        }
+        </script>
 </head>
 
 <body>
@@ -36,7 +41,8 @@
             <h1>Subscribe To Our Newsletter</h1>
             <form>
                 <input type="email" placeholder="Enter Your Email">
-                <button type="submit" class="news_button">Subscribe</button>
+                <button type="submit" class="news_button" onclick="myFunction()">Subscribe</button>
+                <!-- <button onclick="myFunction()">Try it</button> -->
             </form>
         </div>
     </section>
@@ -70,6 +76,7 @@
             </div>
         </div>
     </section>
+    
 
     <footer>Team 10 Web Design &copy; 2020</footer>
 
